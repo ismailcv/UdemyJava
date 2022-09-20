@@ -1,17 +1,35 @@
-package Constructor1;
-
 public class Account {
+    
     private String hesapNo;
     private double bakiye;
-    private String isim;   
-    private String email;   
+    private String isim; 
+    private String email; 
     private String telefonNo;
 
     public Account(){
-        
-        System.out.println("Kendi Yazdığımız Consttructor...");
-        
+       /* this.hesapNo = "Bilgi Yok";
+        this.bakiye = 0.0;
+        this.isim = "Bilgi Yok";
+        this.email =  "Bilgi Yok";
+        this.telefonNo = "Bilgi Yok";*/
+       
+       this("Bilgi Yok",0.0,"Bilgi Yok","Bilgi Yok","Bilgi Yok");
+         
+        //System.out.println("Kendi Yazdığımız Consttructor...."); 
     }
+
+    public Account(String isim,String email,String telefonNo){
+        
+        /*this.isim = isim;
+        this.email = email;
+        this.telefonNo = telefonNo;
+        
+        this.bakiye = 0.0;
+        this.hesapNo = "Bilgi Yok";*/
+        
+        this("Bilgi Yok",0.0,isim,email,telefonNo);     
+    }
+
     public Account(String hesapNo,double bakiye,String isim,String email,String telefonNo) {
         
         this.hesapNo = hesapNo;
@@ -28,25 +46,34 @@ public class Account {
         
         bakiye += miktar;
         
-        System.out.println("Yeni Bakiye = " + bakiye);
-        
+        System.out.println("Yeni Bakiye = " + bakiye); 
     }
+
+    public void bilgilerigoster() {
+        
+        System.out.println("Hesap No: " + this.hesapNo);
+        System.out.println("Bakiye: " + this.bakiye);
+        System.out.println("İsim: " + this.isim);
+        System.out.println("Email: " + this.email);
+        System.out.println("Telefon No: " + this.telefonNo);  
+    }
+
     public void paraCekme(double miktar) {
         
         if (miktar > 1500) {
             System.out.println("Bir günde 1500 tlden fazla para çekemezsiniz...");
         }
-        else if (bakiye - miktar < 0 ) {
+        if (bakiye - miktar < 0 ) {
             System.out.println("Yeterli bakiye yok. Bakiye = " + bakiye);
             
         }
         else {
             
             bakiye -= miktar;
-            System.out.println("Yeni bakiye = " + bakiye);
-            
+            System.out.println("Yeni bakiye = " + bakiye);    
         }
     }
+    
     /**
      * @return the hesapNo
      */
@@ -115,5 +142,5 @@ public class Account {
      */
     public void setTelefonNo(String telefonNo) {
         this.telefonNo = telefonNo;
-    } 
+    }  
 }
