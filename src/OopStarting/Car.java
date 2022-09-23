@@ -1,6 +1,6 @@
 package OopStarting;
 
-public class Araba {
+public class Car {
     public String renk;
     public int kapilar;
     public int tekerlekler;

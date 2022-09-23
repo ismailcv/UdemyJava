@@ -3,25 +3,25 @@ package ClassesMetod;
 public class Test {
      public static void main(String[] args) {
         
-        /*Araba araba1 = new Araba();
+        /*Car car1 = new Car();
         
         
-        araba1.setModel("Renault");
+        car1.setModel("Renault");
         
-        System.out.println("Arabanın modeli " + araba1.getModel());
-        
-        
-        araba1.setKapilar(-4);*/
+        System.out.println("Arabanın modeli " + car1.getModel());
         
         
-        /*Araba araba2;
+        car1.setKapilar(-4);*/
         
-        araba2.setKapilar(10);*/
         
-        Araba araba3 = new Araba();
+        /*Car car2;
         
-        araba3.setModel("Renault");
-         System.out.println(araba3.getModel());
+        car2.setKapilar(10);*/
+        
+        Car car3 = new Car();
+        
+        car3.setModel("Renault");
+         System.out.println(car3.getModel());
          
     }
 }

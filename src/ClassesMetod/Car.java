@@ -1,7 +1,7 @@
 package ClassesMetod;
 
 
-public class Araba {
+public class Car {
 
     private String renk;
     private int kapilar;

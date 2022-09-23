@@ -2,7 +2,7 @@ package OopStarting;
 
 public class Test {
     public static void main(String[] args) {
-         Araba araba1 = new Araba();
+         Car araba1 = new Car();
         
         araba1.renk = "Kırmızı";
         araba1.kapilar = 4;
